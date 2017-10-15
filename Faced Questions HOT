@@ -44,3 +44,63 @@ Q9. What is Flip Flop in Angular2 ?
 Q10. What is HTML5 GUI ?
 
 
+------------------------------------------------------------------
+---------------------  Echinda ----------------------------------
+
+1. output of
+function foo(){
+function bar(){
+return 3;
+}
+return bar();
+function bar(){
+return 8;
+}
+}
+foo();
+
+2. does each javascript function returns a value ?
+
+3. output of
+var x = parseInt("sss123");
+console.log(x);
+
+4. output of
+var funn = (function(x){
+return x*x;
+})(10);
+console.log(funn);
+
+5. Add textbox value dynamically in li inside ul using element selector ?
+
+6. output of 
+function some(){
+var arr = [ ];
+  for (var i = 0; i<10 ; i++){
+  console.log("i of arr" + arr[i]);
+  console.log("printing value of i" + i);
+  }
+}
+some(5);
+
+7. output of
+function xx(){
+  if( true == "0"){
+  console.log("true");
+  }
+  if(true !=="0"){
+  console.log("Not identical");
+  }
+}
+
+8. substitute of $(document).ready(fun(){});
+
+9. what is best to use CDN or local library ?
+
+10. how to align website center horizontally using css property ?
+
+11. Define Jquery Offset Method ?
+
+12. how to link external css file ?
+
+13. 
