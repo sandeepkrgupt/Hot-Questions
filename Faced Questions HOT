@@ -23,8 +23,6 @@ obj2 output  = {a : 10 , b : 20}
 obj2.b output = 20
 obja.c = undefined.
 
------------------------------------------------------------------------------
-
 Q2. Why we use Angular2 ? What is advantage of angular2 over Angular1?
 
 Q3. Do we use watch in angular2 , if no why?
