@@ -93,7 +93,7 @@ function xx(){
 
 8. substitute of $(document).ready(fun(){});
 
-9. what is best to use CDN or local library ?
+9. what is best to use in website, CDN or local library ?
 
 10. how to align website center horizontally using css property ?
 
