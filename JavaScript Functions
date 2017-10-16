@@ -5,7 +5,7 @@ function alrt(a,b){
  return a*b;
 }
 // the declared function will not execute if they are not invoked like below
-document.getElementById("demo").innserHTML = alrt(5,6);
+document.getElementById("demo").innerHTML = alrt(5,6);
 -------------------------------------------------------
 ii. Using Expression
 var x = function(a,b){
