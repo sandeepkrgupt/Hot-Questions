@@ -87,6 +87,19 @@ return a;
 }
 document.getElementById("demo").innerHtml = myfun.toString() // ouput - function myfun(){ return a ; }
 -----------------------------------------------------------------------
+Getting the sum of all arguments of a function
+<script>
+function sumAll() {
+    var i, sum = 0;
+    for(i = 0; i < arguments.length; i++) {
+        sum = sum + arguments[i];
+    }
+    return sum;
+} 
+document.getElementById("demo").innerHTML = sumAll(1, 123, 6); // output -  130
+document.getElementById("demo").innerHTML = sumAll(1,7 "123", "str"); // output -  8123str
+</script>
+--------------------------------------------------------------------------
 
 
 
