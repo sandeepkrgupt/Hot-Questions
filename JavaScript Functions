@@ -107,6 +107,23 @@ document.getElementById("demo").innerHTML = Math.max(1,2,6,0); // output - 6
 apply() takes any function arguments as an array.
 document.getElementById("demo").innerHTML = Math.max(1,2,6,0); // output - 6
 
+-----------------------------------------------------------------------------
+Javascript Closure with example
+JavaScript variables can belong to the local or global scope.
+Global variables can be made local (private) with closures.
+<p id="demo">0</p>
+<button onclick="myFun()">click</button>
+<script>
+var count = 0;
+var myCount = (function(){
+var count = 2;
+return function(){ return count += 1};
+})();
+function myFun(){
+document.getElementById("demo").innerHTML = myCount();
+}
+</script>
+this will start from 2.
 
 
 
