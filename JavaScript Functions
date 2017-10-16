@@ -43,8 +43,13 @@ Note : -Functions defined using an expression are not hoisted.
  A self invoking function call itself automatically , without being called.
  
  (function(){
- document.getElementById("demo").innerHTML = " Am Self Invoking Fun";
+ document.getElementById("demo").innerHTML = " Am Self Invoking Fun"; // output - Am Self Invoking fun
  })();
+ 
+ (function (x) {
+    document.getElementById("demo").innerHTML = x;   // output - Am indian
+})("Am Indian");
+
 Note : - A self invoking function is actually an anonymous function.
 -------------------------------------------------------------------
 Javascript function as value
