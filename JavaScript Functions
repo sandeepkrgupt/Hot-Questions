@@ -1,1 +1,89 @@
-fgf
+Javascript Functions are defined in three diff ways
+
+i. Using function keyword known as function declaration
+function alrt(a,b){
+ return a*b;
+}
+// the declared function will not execute if they are not invoked like below
+document.getElementById("demo").innserHTML = alrt(5,6);
+-------------------------------------------------------
+ii. Using Expression
+var x = function(a,b){
+return a*b;
+}
+document.getElementById("demo").innerHTML = x;   // output - function(a,b){ return a*b;}
+document.getElementById("demo").innerHTML = x(5,6);   // output - 30
+document.getElementById("demo").innerHTML = x(5,"6");   // output - 30
+
+document.getElementById("demo").innerHTML = x(9); // output - NaN
+document.getElementById("demo").innerHTML = x(4, "str");  // output - NaN
+
+Note : - Anonymous Function - A function with no name is known as anonymous function or function with expression is known
+as Anonymous function.
+--------------------------------------------------------
+iii. Using Constructor
+var x = new Function("a","b", "return a*b");
+document.getElementById("demo").innerHTML = x(5,6);
+
+------------------------------------------------------------
+Function Hoisting
+Hoisting is the default behavior of javascript of moving declarations to the top of current scope.
+Hoisting is applied to variable and function declaration like
+x = 5; // declaration
+var x; // defenition
+
+myfun(6); // declaration
+function myfun(){} // definition
+
+Note : -Functions defined using an expression are not hoisted.
+
+---------------------------------------------------------------
+ Self Invoking function 
+ function expression can be made self invoking
+ A self invoking function call itself automatically , without being called.
+ 
+ (function(){
+ document.getElementById("demo").innerHTML = " Am Self Invoking Fun";
+ })();
+Note : - A self invoking function is actually an anonymous function.
+-------------------------------------------------------------------
+Javascript function as value
+
+function myfun(a,b){
+return a+b;
+}
+var x = myfun(5,7);
+document.getElementById("demo").innerHTML = x;
+
+--------------------------------------------------------------------
+Javascript function as Expression
+
+function myfun(a,b){
+return a*b;
+}
+var x = myfun(5,6) + 10;
+document.getElementById("demo").innerHTML = x;  // output - 40
+
+---------------------------------------------------------------------
+Javascript Functions as Object
+Javascript functions are objects with properties and methods.
+
+Note : - arguments.length returns the number of arguments received when function invoked/called.
+function myfun(a,b,c,d,e,f){
+ return arguments.length;   // output - 3
+}
+document.getElementById("demo").innerHTML = myfun(4,5,"Arg")
+-----------------------------------------------------------------------
+toString() - use to return function as a string.
+function myfun(){
+return a;
+}
+document.getElementById("demo").innerHtml = myfun.toString() // ouput - function myfun(){ return a ; }
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
