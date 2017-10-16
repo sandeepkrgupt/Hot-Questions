@@ -46,31 +46,50 @@ Q10. What is HTML5 GUI ?
 ---------------------  Echinda ----------------------------------
 
 1. output of
-function foo(){
-function bar(){
-return 3;
+<p id="demo"></p>
+<script>
+function foo() {
+    function bar(){
+     return 3;
+    }
+    return bar();
+    function bar(){
+    return 8;
+    }
 }
-return bar();
-function bar(){
-return 8;
-}
-}
-foo();
-
+console.log(foo());  // output - 8
+document.getElementById("demo").innerHTML = foo();  // output - 8
+</script>
+-----------------------------------------------------------------
 2. does each javascript function returns a value ?
-
+-------------------------------------------------------------------
 3. output of
-var x = parseInt("sss123");
-console.log(x);
+var x = parseInt("34543Str");
+document.getElementById("demo").innerHTML = x; // output - 34543
 
+var x = parseInt("Str");
+document.getElementById("demo").innerHTML = x; // output - NaN
+
+Using parseInt inside function -
+<script>
+function myFunction(a , b) {
+    return parseInt(a , b);
+}
+var c = myFunction.toString();
+console.log(c);  // output - function myFunction(a,b){ return parseInt(a,b)}
+
+var x = myFunction("4444rrrr", "yy");
+console.log(x);  // output - 4444
+</script>
+-------------------------------------------------------------------------
 4. output of
 var funn = (function(x){
 return x*x;
 })(10);
 console.log(funn);
-
+-------------------------------------------------------------------------
 5. Add textbox value dynamically in li inside ul using element selector ?
-
+------------------------------------------------------------------------
 6. output of 
 function some(){
 var arr = [ ];
@@ -80,7 +99,7 @@ var arr = [ ];
   }
 }
 some(5);
-
+--------------------------------------------------------------------------
 7. output of
 function xx(){
   if( true == "0"){
@@ -90,15 +109,15 @@ function xx(){
   console.log("Not identical");
   }
 }
-
+-------------------------------------------------------------------------
 8. substitute of $(document).ready(fun(){});
-
+-------------------------------------------------------------------------
 9. what is best to use in website, CDN or local library ?
-
+------------------------------------------------------------------------
 10. how to align website center horizontally using css property ?
-
+------------------------------------------------------------------------
 11. Define Jquery Offset Method ?
-
+------------------------------------------------------------------------
 12. how to link external css file ?
-
+----------------------------------------------------------------------
 13. 
