@@ -1,5 +1,5 @@
 Mobinus Info Tech Oct - 12/2017
-
+------------------------------------------------------
 output of this query /
 <!DOCTYPE html>
 <html>
@@ -22,23 +22,23 @@ output -
 obj2 output  = {a : 10 , b : 20}
 obj2.b output = 20
 obja.c = undefined.
-
+-----------------------------------------------------------------------
 Q2. Why we use Angular2 ? What is advantage of angular2 over Angular1?
-
+----------------------------------------------------------------------
 Q3. Do we use watch in angular2 , if no why?
-
+-----------------------------------------------------------------------
 Q4. Describe the Life cycle of Angular2 ?
-
+----------------------------------------------------------------------
 Q5. What are Promises in Angular2 ?
-
+----------------------------------------------------------------------
 Q6. What is the core concept of angular2 ?
-
+---------------------------------------------------------------------
 Q7. What is auto complete/ auto search in Angular2 ?
-
+---------------------------------------------------------------------
 Q8. What is Map in Angular2 ?
-
+---------------------------------------------------------------------
 Q9. What is Flip Flop in Angular2 ?
-
+---------------------------------------------------------------------
 Q10. What is HTML5 GUI ?
 
 
