@@ -40,7 +40,15 @@ Q8. What is Map in Angular2 ?
 Q9. What is Flip Flop in Angular2 ?
 ---------------------------------------------------------------------
 Q10. What is HTML5 GUI ?
-
+---------------------------------------------------------------------
+Q11. How to get type of function ?
+Ans -
+function myfun(){
+  return "hello";
+}
+if(typeof(myfun)  === "function"){
+  alert("this is a function");
+}
 
 ------------------------------------------------------------------
 ---------------------  Echinda ----------------------------------
