@@ -18,8 +18,8 @@ document.getElementById("demo").innerHTML = x(5,"6");   // output - 30
 document.getElementById("demo").innerHTML = x(9); // output - NaN
 document.getElementById("demo").innerHTML = x(4, "str");  // output - NaN
 
-Note : - Anonymous Function - A function with no name is known as anonymous function or function with expression is known
-as Anonymous function.
+Note : - Anonymous Function - A function with no name is known as anonymous function.
+Expressional functions are type of Anonymous functions.
 --------------------------------------------------------
 iii. Using Constructor
 var x = new Function("a","b", "return a*b");
