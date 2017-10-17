@@ -95,9 +95,10 @@ console.log(x);  // output - 4444
 -------------------------------------------------------------------------
 4. output of
 var funn = (function(x){
-return x*x;
+return x*x;   // output - 100
 })(10);
 console.log(funn);
+This is a self invoking function, so we donot need to bind it with any event.
 -------------------------------------------------------------------------
 5. Add textbox value dynamically in li inside ul using element selector ?
 ------------------------------------------------------------------------
