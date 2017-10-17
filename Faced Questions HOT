@@ -104,23 +104,35 @@ This is a self invoking function, so we donot need to bind it with any event.
 ------------------------------------------------------------------------
 6. output of 
 function some(){
-var arr = [ ];
-  for (var i = 0; i<10 ; i++){
+var arr = [];
+  for (var i = 0; i<5 ; i++){
   console.log("i of arr" + arr[i]);
   console.log("printing value of i" + i);
   }
 }
-some(5);
+some(2);
+//output -
+i of arr - undefined
+printing value of i0
+i of arr - undefined
+printing value of i1
+i of arr - undefined
+printing value of i2
+i of arr - undefined
+printing value of i3
+i of arr - undefined
+printing value of i4
 --------------------------------------------------------------------------
 7. output of
-function xx(){
+(function xx(){
   if( true == "0"){
-  console.log("true");
+  console.log("true == 0");
   }
-  if(true !=="0"){
-  console.log("Not identical");
+  else if(true !="0"){
+  console.log("true != 0");
   }
-}
+})();
+//output - ture!=0;
 -------------------------------------------------------------------------
 8. substitute of $(document).ready(fun(){});
 -------------------------------------------------------------------------
