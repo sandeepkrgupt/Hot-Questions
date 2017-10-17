@@ -184,4 +184,10 @@ Ans-
 </script>
 <INPUT type="checkbox" onchange="checkAll(this)"  />ID
 
+14. getting today day ?
+<script>
+var d = new Date();
+document.getElementById("demo").innerHTML = d.getDay(); // output -2 (Tuesday)
+</script>
+
 
