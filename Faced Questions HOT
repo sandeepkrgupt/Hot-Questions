@@ -70,6 +70,9 @@ document.getElementById("demo").innerHTML = foo();  // output - 8
 </script>
 -----------------------------------------------------------------
 2. does each javascript function returns a value ?
+Ans - It's true—because that's how JavaScript was designed.
+the JS engine has to be notified that some function has finished its business,
+which is done by the function returning something. 
 -------------------------------------------------------------------
 3. output of
 var x = parseInt("34543Str");
