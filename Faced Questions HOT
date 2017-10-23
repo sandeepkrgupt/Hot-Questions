@@ -167,6 +167,7 @@ $(document).ready(function(){
 </script>
 ------------------------------------------------------------------------
 12. how to link external css file ?
+Ans - <link rel="stylesheet" href="location/cdn"> not <link rel="stylesheet" href="location/cdn"/> 
 ----------------------------------------------------------------------
 13. Select deselect all checkbox on clicking single checkbox ?
 Ans-
