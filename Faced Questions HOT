@@ -139,6 +139,14 @@ printing value of i4
 9. what is best to use in website, CDN or local library ?
 ------------------------------------------------------------------------
 10. how to align website center horizontally using css property ?
+Ans - use margin: 0 auto;
+or margin:auto to align in center in your css class. e.g
+div {
+    border: 1px solid black;
+    margin: 0 auto;  // or auto;
+    background-color: lightblue;
+    width:50%;
+}
 ------------------------------------------------------------------------
 11. Define Jquery Offset Method ?
 Ans - 
