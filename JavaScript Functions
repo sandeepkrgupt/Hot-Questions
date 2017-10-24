@@ -36,7 +36,19 @@ myfun(6); // declaration
 function myfun(){} // definition
 
 Note : -Functions defined using an expression are not hoisted.
-
+this below script is not hoisted -
+<script>
+var x = 5; // Initialize x
+var y;     // Declare y
+elem = document.getElementById("demo"); // Find an element 
+elem.innerHTML = x + " " + y;           // Display x and y
+y = 7;     // Assign 7 to y
+</script>
+output - 5 undefined.( y is undefined)
+Note -
+To avoid bugs, always declare all variables at the beginning of every scope.
+Since this is how JavaScript interprets the code, it is always a good rule.
+**JavaScript in strict mode does not allow variables to be used if they are not declared.
 ---------------------------------------------------------------
  Self Invoking function 
  function expression can be made self invoking
