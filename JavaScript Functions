@@ -27,7 +27,7 @@ document.getElementById("demo").innerHTML = x(5,6);
 
 ------------------------------------------------------------
 Function Hoisting
-Hoisting is the default behavior of javascript of moving declarations to the top of current scope.
+Hoisting is the default behavior of javascript of moving declarations to the top of current scope (current script or function).
 Hoisting is applied to variable and function declaration like
 x = 5; // declaration
 var x; // defenition
