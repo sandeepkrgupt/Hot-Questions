@@ -144,7 +144,13 @@ printing value of i4
   	console.log("true");  // HERE DATA TYPE IS DIFF BUT IF, 1 === parseInt("1") IT WII RETURN TRUE.
   }
 })();
-//output - ture!=0;
+//Some other outputs -
+//alert(0 == false); // return true, because both are same type.
+// alert(null == undefined); // return true.
+// alert(null === undefined); // return false.
+// alert('0' == false); // return true.
+// alert('0' === false); // return false.
+// alert(1 === parseInt("1")); // return true.
 -------------------------------------------------------------------------
 8. substitute of $(document).ready(fun(){});
 -------------------------------------------------------------------------
