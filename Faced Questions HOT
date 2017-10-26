@@ -11,9 +11,9 @@ function show(){
   var obj1 = {"a":10,"b":20};
   var obj2 = {"c":300};
   obj2 = obj1;
-  console.log("obj2 output" ,obj2);
-  console.log("obj2.b output" ,obj2.b);
-  console.log("obj1.c output",obj1.c);
+  console.log("obj2 output" + obj2);
+  console.log("obj2.b output" + obj2.b);
+  console.log("obj1.c output" + obj1.c);
 }
 </script>
 </body>
